@@ -7,9 +7,9 @@ const Navbar = () => {
   const [selectedLang, setSelectedLang] = useState("EN"); // Default language
 
   const menuItems = [
-    { name: "Home", link: "#" },
-    { name: "About us", link: "#" },
-    { name: "Services", link: "#" },
+    { name: "Home", link: "#home" },
+    { name: "About us", link: "#subscribe"  },
+    { name: "Services", link: "#service" },
   ];
 
   // Language dropdown component
