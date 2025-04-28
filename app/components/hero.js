@@ -8,7 +8,7 @@ export default function Section1() {
     <section className="h-screen flex flex-col md:flex-row items-center justify-between p-6 relative md:mt-0 mt-5 overflow-hidden">
   {/* Background Zoom Animation */}
   <motion.div
-    className="absolute top-0 left-0 w-full h-full z-[-1] bg-cover bg-center scale-110" 
+    className="absolute top-0 left-0 w-[90rem] h-full z-[-1] bg-cover bg-center scale-110 mx-[2rem]" 
     style={{ backgroundImage: "url('/background01.jpg')" }}
     animate={{ scale: [1, 1.2, 1] }} // smaller scale range
     transition={{
