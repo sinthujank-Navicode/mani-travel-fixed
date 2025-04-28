@@ -14,7 +14,7 @@ const Navbar = () => {
 
   // Language dropdown component
   const languageDropdown = (
-    <div className="  relative language-dropdown">
+    <div className="relative language-dropdown">
       <button
         onClick={() => setLangOpen(!langOpen)}
         className="flex items-center text-sm cursor-pointer"
@@ -61,8 +61,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" w-full z-50 flex items-center justify-between px-6 py-4 ">
-      <div className="flex items-center space-x-15 bg-white shadow-sm px-11 py-1 rounded-2xl">
+    <nav className=" w-full  flex items-center justify-between px-6 py-4">
+      <div className="flex items-center space-x-15 bg-white md:shadow-sm px-11 py-1 rounded-2xl">
         <div className="text-3xl mb-2 font-bold ">Logo</div>
 
         {/* Desktop Menu */}
