@@ -5,22 +5,24 @@ import { useEffect } from "react";
 export default function Section1() {
  
   return (
-    <section className="h-screen  flex flex-col md:flex-row items-center justify-between p-6 relative md:mt-0 mt-5">
-      {/* Background Zoom Animation */}
-      <motion.div
-        className="absolute top-0 left-0 w-full h-full z-[-1] bg-cover bg-center"
-        style={{ backgroundImage: "url('/background01.jpg')" }}
-        animate={{ scale: [1, 1.20, 1] }} 
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          repeatType: "loop",
-          ease: "easeInOut",
-        }}
-      />
+    <section className="h-screen flex flex-col md:flex-row items-center justify-between p-6 relative md:mt-0 mt-5 overflow-hidden">
+  {/* Background Zoom Animation */}
+  <motion.div
+    className="absolute top-0 left-0 w-full h-full z-[-1] bg-cover bg-center scale-110" 
+    style={{ backgroundImage: "url('/background01.jpg')" }}
+    animate={{ scale: [1, 1.2, 1] }} // smaller scale range
+    transition={{
+      duration: 20,
+      repeat: Infinity,
+      repeatType: "loop",
+      ease: "easeInOut",
+    }}
+  />
+
+
       
       {/* First Box - Text Section */}
-      <div className="flex flex-col justify-center items-center z-[40] md:items-start text-center md:text-left mt-16 bg-white bg-opacity-20 p-12 w-full md:w-[50%] min-h-[600px] 2xl:min-h-[750px] relative md:rounded-l-3xl">
+      <div className="flex flex-col justify-center items-center z-[40] md:items-start text-center md:text-left mt-2 bg-white bg-opacity-20 p-12 w-full md:w-[50%] min-h-[600px] 2xl:min-h-[750px] relative md:rounded-l-3xl">
         <p className="text-md text-gray-800">
           __ As an independent entity,<br /> we provide supportive and neutral<br /> governance to our coalition
         </p>
@@ -52,7 +54,7 @@ export default function Section1() {
       </div>
 
       {/* Second Box - Image Section */}
-      <div className="relative p-12 w-full md:w-[50%] min-h-[600px] 2xl:min-h-[750px] mt-16 flex justify-center border-16 border-white rounded-r-3xl hidden md:flex"></div>
+      <div className="relative p-12 w-full md:w-[50%] min-h-[600px] 2xl:min-h-[750px] mt-2 flex justify-center border-16 border-white rounded-r-3xl hidden md:flex"></div>
     </section>
   );
 }
