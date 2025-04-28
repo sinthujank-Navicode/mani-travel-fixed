@@ -5,7 +5,7 @@ export default function ContactSection() {
     <section className="py-12 px-1 md:px-6 bg-white">
       <h2 className="text-3xl font-bold text-center mb-10">Contact Us</h2>
 
-      <div className="bg-[#e9f1f7] rounded-xl p-4 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16">
+      <div className="bg-[#e9f1f7] rounded-2xl p-4 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16">
 
         {/* Left Side */}
         <div className="flex flex-col gap-6">

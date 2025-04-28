@@ -43,7 +43,7 @@ export default function Services() {
     ];
   
     return (
-      <section className="bg-white py-10 px-4">
+      <section className="bg-white py-10 px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
           Our Services
         </h2>
