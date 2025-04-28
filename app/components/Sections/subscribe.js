@@ -2,7 +2,7 @@
 
 export default function Newsletter() {
   return (
-    <section className="bg-[#e9f1f7] py-10 px-4 md:px-10 rounded-2xl text-center">
+    <section className="bg-[#e9f1f7] py-10 px-6 md:px-10 rounded-2xl text-center">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
         Join Our Travel World
       </h2>
